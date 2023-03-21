@@ -7,11 +7,12 @@
  *
  * Return: 1, 0 and -1
  */
-int print_sign(int n);{
+int print_sign(int n)
+{
 	if (n > 0)
 	{
 		_putchar('+');
-		_putcha(',');
+		_putchar(',');
 		_putchar(' ');
 		return (1);
 
@@ -20,7 +21,7 @@ int print_sign(int n);{
 	else if (n == 0)
 	{
 		_putchar('0');
-		_putchat(',');
+		_putchar(',');
 		_putchar(' ');
 		return (0);
 
