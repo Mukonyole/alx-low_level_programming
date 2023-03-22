@@ -1,13 +1,17 @@
+
 #include <stdio.h>
+
 /**
- * main - prints the first 52 fibonacci numbers
+ * main - Prints the first 52 fibonacci numbers
  * Return: Nothing!
  */
 
 int main(void)
+
 {
+
 	int i = 0;
-	long j = i, k = 2;
+	long j = 1, k = 2;
 
 	while (i < 50)
 	{
@@ -25,4 +29,5 @@ int main(void)
 	}
 	printf("\n");
 	return (0);
+
 }
