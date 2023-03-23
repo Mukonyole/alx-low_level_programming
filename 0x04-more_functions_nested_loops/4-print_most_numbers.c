@@ -2,7 +2,7 @@
 
 /**
  * print_most_numbers - print numbers from 0 to 9.
- * Description: prints numbers excluding 2 and 4.
+ * Description: prints the numbers excluding 2 and 4.
  * Return: numbers from 0 t0 9.
  */
 
@@ -14,7 +14,7 @@ void print_most_numbers(void)
 	{
 	if (x == 2 || x == 4)
 	{
-	Continue;
+	continue;
 	}
 	else
 	{
