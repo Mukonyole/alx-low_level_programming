@@ -1,9 +1,9 @@
 #include "main.h"
 /**
  * _strncpy - copy a string
- * @dest: input value
- * @src: input value
- * @n: input value
+ * @dest: destination string.
+ * @src: source string
+ * @n: number of strings.
  *
  * Return: dest
  */
