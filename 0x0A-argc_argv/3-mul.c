@@ -5,7 +5,7 @@
  * main - multiplies two numbers.
  * @argc: The number of arguments.
  * @argv: The array of arguments.
- * Return: An int converted from string.
+ * Return: Always 0(success), 1 (error).
  */
 
 int main(int argc, char *argv[])
