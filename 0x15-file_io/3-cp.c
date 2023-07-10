@@ -18,10 +18,10 @@ char *create_buffer(char *file)
 	if (buffer == NULL)
 	{
 		dprintf(STDERR_FILENO,
-			"Error: Can't write to %s\n", file);
-		exit(99);
+			"Error: Can't write to %s\n", file);/*If allocation fails.*/
+		exit(99);/* Exit error code.*/
 	}
-	return (buffer);
+	return (buffer);/* On success.*/
 }
 
 /**
@@ -36,12 +36,13 @@ void close_file(int fd)
 	if (a == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
-		exit(100);
+		/* If closing operation fails.*/
+		exit(100);/* Exit error code.*/
 	}
 }
 
 /**
- * main - Copies file contents to another file.
+ * main - Entry point of a program.
  * @argc: number of arguments
  * @argv: An array of arguments.
  * Return: 0 on success.
@@ -51,7 +52,7 @@ int main(int argc, char *argv[])
 	int from, to, b, c;
 	char *buffer;
 
-	if (argc != 3)
+	if (argc != 3)/* If number of arguments is not equal to 3.*/
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
